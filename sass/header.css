@@ -1,0 +1,80 @@
+header {
+  height: 70px;
+  width: 100vw;
+  background-color: #6E4445;
+  position: fixed;
+  z-index: 1000000;
+}
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  list-style: none;
+  padding-top: 5px;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+  position: relative;
+  display: inline-block;
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.sub-menu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  margin: 0;
+}
+
+.sub-menu a:hover {
+  background-color: #6E4445;
+  color: #fff;
+}
+
+ul {
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+  list-style-type: none;
+}
+
+.menu-item-has-children:hover .sub-menu {
+  display: block;
+}
+
+.wp-block-media-text__content {
+  -webkit-transform: translateX(-8%);
+          transform: translateX(-8%);
+}
+
+.searchbar {
+  float: right;
+  padding-right: 20px;
+  border-radius: 10px;
+  -webkit-transform: translateY(-18px);
+          transform: translateY(-18px);
+}
+.searchbar label {
+  color: white;
+  cursor: pointer;
+  padding-right: 20px;
+  background-color: #6E4445;
+  z-index: 99999999999999;
+  padding-right: 20px;
+  border-radius: 5px;
+}
